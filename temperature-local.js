@@ -34,7 +34,7 @@ AssistantTemperatureLocal.prototype.action = function(commande) {
   if (!commande.lat_sw) return Promise.reject("[assistant-temperature-local] Le latitude sud-ouest ('lat_sw') n'a pas été fournie dans la commande.");
   if (!commande.lon_sw) return Promise.reject("[assistant-temperature-local] Le longitude sud-ouest ('lon_sw') n'a pas été fournie dans la commande.");
   return request({
-    'url' : 'https://assistant.kodono.info/temperature-local.php?lat_ne='+commande.lat_ne+'&lon_ne='+commande.lon_ne+'&lat_sw='+commande.lat_sw+"&lon_sw="+commande.lon_sw;
+    'url' : 'https://assistant.kodono.info/temperature-local.php?lat_ne='+commande.lat_ne+'&lon_ne='+commande.lon_ne+'&lat_sw='+commande.lat_sw+'&lon_sw='+commande.lon_sw
   })
   .then(function(response){
     if (response) {
