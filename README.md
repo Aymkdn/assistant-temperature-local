@@ -27,11 +27,11 @@ Il va d'abord falloir déterminer la zone pour laquelle vous souhaitez connaitre
       ![capture](https://user-images.githubusercontent.com/946315/34818410-01ac7d20-f6bb-11e7-8fb8-dfacb1eb96b8.PNG)
      * Un message apparait en bas de la carte :  
       ![card](https://user-images.githubusercontent.com/946315/34818779-211194b0-f6bc-11e7-9246-b2eb84b5532a.png)
-     * On clique sur le chiffres ; un panneau latéral va s'ouvrir indiquant les coordonnées GPS :  
+     * On clique sur les nombres ; un panneau latéral va s'ouvrir indiquant les mêmes nombres (qui sont des coordonnées GPS) :  
       ![capture](https://user-images.githubusercontent.com/946315/34818449-1c3bd1f4-f6bb-11e7-84c1-4258bf101fa4.PNG)
-     * Noter ces coordonnées qui correspondent à la latitude Nord-Est (le premier chiffre, ici c'est *43.612026*), et la longitude Nord-Est (second chiffre, ici c'est *3.931351*)
+     * Noter ces coordonnées qui correspondent à la **latitude Nord-Est** (le premier chiffre, ici c'est *43.612026*), et la **longitude Nord-Est** (second chiffre, ici c'est *3.931351*)
   4) Maintenant on fait de même avec **l'angle inférieur gauche** de la zone/carré imaginaire
-     * Cela va nous donner la latitude Sud-Ouest (par exemple *43.600426*), et la longitude Sud-Ouest par exemple (par exemple *3.897817*)
+     * Cela va nous donner la **latitude Sud-Ouest** (par exemple *43.600426*), et la **longitude Sud-Ouest** par exemple (par exemple *3.897817*)
 
 Maintenant on peut créer l'applet : 
   1) Créer une nouvelle *applet* dans IFTTT : [https://ifttt.com/create](https://ifttt.com/create)  
@@ -42,7 +42,8 @@ Maintenant on peut créer l'applet :
   6) Maintenant, cliquer sur **that** puis choisir **Pushbullet**  
   7) Choisir la carte **Push a Note**  
   8) Dans le champs *« Title »*, mettre `Assistant`  
-  9) Dans le champs *« Message »*, mettre `temperature-local_` suivi par une chaine spéciale composée des nombres trouvés plus hauts. Dans notre exemple cela donne : `temperature-local_{'lat_ne':43.612026,'lon_ne':3.931351,'lat_sw':43.600426,'lon_sw':3.897817}` 
+  9) Dans le champs *« Message »*, mettre `temperature-local_` suivi par une chaine spéciale composée des nombres trouvés plus hauts. Dans notre exemple cela donne :  
+   `temperature-local_{'lat_ne':43.612026,'lon_ne':3.931351,'lat_sw':43.600426,'lon_sw':3.897817}` 
   10) Enregistrer puis cliquer sur **Finish**  
   11) Dites : « OK Google » suivi de votre phrase spéciale du point 4)  
   12) Et Google Home va vous donner la température moyenne trouvée sur la zone.
