@@ -2,7 +2,7 @@
 
 Ce plugin de [`assistant-plugins`](https://aymkdn.github.io/assistant-plugins/) permet de connaître la température dans une zone précise, à partir des [stations Netatmo](https://weathermap.netatmo.com/).
 
-**ATTENTION** : le plugin [`assistant-notifier`](https://aymkdn.github.io/assistant-plugins/?plugin=notifier) afin d'avoir un retour vocal sur son Google Home.
+**ATTENTION** : le plugin [`assistant-notifier`](https://aymkdn.github.io/assistant-plugins/?plugin=notifier) est **OBLIGATOIRE** afin d'avoir un retour vocal sur son Google Home.
 
 ## Installation
 
@@ -23,9 +23,12 @@ Il va d'abord falloir déterminer la zone pour laquelle vous souhaitez connaitre
   1) Vérifier que Netatmo propose des stations dans la zone souhaitée : https://weathermap.netatmo.com/
   2) Si oui, se rendre sur https://www.google.fr/maps
   3) Sur Google Maps, on va délimiter de façon imaginaire la zone/carré que l'on souhaite pour notre calcul des températures. Pour ce faire :
-     * Cliquer droit sur la carte dans **l'angle supérieur droit** de la zone/carré imaginaire, puis choisir *Plus d'infos sur cet endroit* : ![capture](https://user-images.githubusercontent.com/946315/34818410-01ac7d20-f6bb-11e7-8fb8-dfacb1eb96b8.PNG)
-     * Un message apparait en bas de la carte : ![card](https://user-images.githubusercontent.com/946315/34818779-211194b0-f6bc-11e7-9246-b2eb84b5532a.png)
-     * On clique sur le chiffres ; un panneau latéral va s'ouvrir indiquant les coordonnées GPS : ![capture](https://user-images.githubusercontent.com/946315/34818449-1c3bd1f4-f6bb-11e7-84c1-4258bf101fa4.PNG)
+     * Cliquer droit sur la carte dans **l'angle supérieur droit** de la zone/carré imaginaire, puis choisir *Plus d'infos sur cet endroit* :  
+      ![capture](https://user-images.githubusercontent.com/946315/34818410-01ac7d20-f6bb-11e7-8fb8-dfacb1eb96b8.PNG)
+     * Un message apparait en bas de la carte :  
+      ![card](https://user-images.githubusercontent.com/946315/34818779-211194b0-f6bc-11e7-9246-b2eb84b5532a.png)
+     * On clique sur le chiffres ; un panneau latéral va s'ouvrir indiquant les coordonnées GPS :  
+      ![capture](https://user-images.githubusercontent.com/946315/34818449-1c3bd1f4-f6bb-11e7-84c1-4258bf101fa4.PNG)
      * Noter ces coordonnées qui correspondent à la latitude Nord-Est (le premier chiffre, ici c'est *43.612026*), et la longitude Nord-Est (second chiffre, ici c'est *3.931351*)
   4) Maintenant on fait de même avec **l'angle inférieur gauche** de la zone/carré imaginaire
      * Cela va nous donner la latitude Sud-Ouest (par exemple *43.600426*), et la longitude Sud-Ouest par exemple (par exemple *3.897817*)
