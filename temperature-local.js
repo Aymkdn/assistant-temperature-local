@@ -40,14 +40,14 @@ AssistantTemperatureLocal.prototype.action = function(commande) {
     if (response) {
       var body = JSON.parse(response);
       var speak = "La température extérieure est de "+body.temperature+" degré";
-      if (_this.plugins.notifier) _this.plugins.notifier.action(speak);
+      if (_this.plugins.notifier) return _this.plugins.notifier.action(speak);
       else {
         console.log("[assistant-temperature-local] ATTENTION: Le plugin 'notifier' n'a pas été installé... le résultat de cette action ne peut donc pas être diffusé sur un appareil et sera seulement inscrit dans cette fenêtre.");
       }
       console.log("[assistant-temperature-local] "+speak);
     } else {
       console.log("[assistant-temperature-local] Erreur lors de l'accès à la ressource...");
-      if (_this.plugins.notifier) _this.plugins.notifier.action("L'action a échoué...");
+      if (_this.plugins.notifier) return _this.plugins.notifier.action("L'action a échoué...");
     }
   })
   .catch(function(err) {
