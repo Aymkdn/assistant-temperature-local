@@ -20,9 +20,9 @@ Aucune configuration requise.
 ## Utilisation
 
 Il va d'abord falloir déterminer la zone pour laquelle vous souhaitez connaitre la température moyenne : 
-  1) Vérifier que Netatmo propose des stations dans la zone souhaitée : https://weathermap.netatmo.com/  
-  2) Si oui, se rendre sur https://www.google.fr/maps  
-  3) Sur Google Maps, on va délimiter de façon imaginaire la zone/carré que l'on souhaite pour notre calcul des températures.   Pour ce faire :  
+  1. Vérifier que Netatmo propose des stations dans la zone souhaitée : https://weathermap.netatmo.com/  
+  2. Si oui, se rendre sur https://www.google.fr/maps  
+  3. Sur Google Maps, on va délimiter de façon imaginaire la zone/carré que l'on souhaite pour notre calcul des températures.   Pour ce faire :  
      * Cliquer droit sur la carte dans **l'angle supérieur droit** de la zone/carré imaginaire, puis choisir *Plus d'infos sur cet endroit* :  
       ![capture](https://user-images.githubusercontent.com/946315/34818410-01ac7d20-f6bb-11e7-8fb8-dfacb1eb96b8.PNG)
      * Un message apparait en bas de la carte :  
@@ -30,23 +30,23 @@ Il va d'abord falloir déterminer la zone pour laquelle vous souhaitez connaitre
      * On clique sur les nombres ; un panneau latéral va s'ouvrir indiquant les mêmes nombres (qui sont des coordonnées GPS) :  
       ![capture](https://user-images.githubusercontent.com/946315/34818449-1c3bd1f4-f6bb-11e7-84c1-4258bf101fa4.PNG)
      * Noter ces coordonnées qui correspondent à la **latitude Nord-Est** (le premier chiffre, ici c'est *43.612026*), et la **longitude Nord-Est** (second chiffre, ici c'est *3.931351*)
-  4) Maintenant on fait de même avec **l'angle inférieur gauche** de la zone/carré imaginaire
+  4. Maintenant on fait de même avec **l'angle inférieur gauche** de la zone/carré imaginaire
      * Cela va nous donner la **latitude Sud-Ouest** (par exemple *43.600426*), et la **longitude Sud-Ouest** par exemple (par exemple *3.897817*)
 
 Maintenant on peut créer l'applet : 
-  1) Créer une nouvelle *applet* dans IFTTT : [https://ifttt.com/create](https://ifttt.com/create)  
-  2) Cliquer sur **this** puis choisir **Google Assistant**  
-  3) Choisir la carte **Say a simple phrase** (ou autre, selon votre cas)  
-  4) Dans *« What do you want to say? »* mettre la phrase qui va déclencher l'action (par exemple : *quelle est la température dans le quartier*)  
-  5) Remplir les autres champs de la carte  
-  6) Maintenant, cliquer sur **that** puis choisir **Pushbullet**  
-  7) Choisir la carte **Push a Note**  
-  8) Dans le champs *« Title »*, mettre `Assistant`  
-  9) Dans le champs *« Message »*, mettre `temperature-local_` suivi par une chaine spéciale composée des nombres trouvés plus hauts. Dans notre exemple cela donne :  
+  1. Créer une nouvelle *applet* dans IFTTT : [https://ifttt.com/create](https://ifttt.com/create)  
+  2. Cliquer sur **this** puis choisir **Google Assistant**  
+  3. Choisir la carte **Say a simple phrase** (ou autre, selon votre cas)  
+  4. Dans *« What do you want to say? »* mettre la phrase qui va déclencher l'action (par exemple : *quelle est la température dans le quartier*)  
+  5. Remplir les autres champs de la carte  
+  6. Maintenant, cliquer sur **that** puis choisir **Pushbullet**  
+  7. Choisir la carte **Push a Note**  
+  8. Dans le champs *« Title »*, mettre `Assistant`  
+  9. Dans le champs *« Message »*, mettre `temperature-local_` suivi par une chaine spéciale composée des nombres trouvés plus hauts. Dans notre exemple cela donne :  
    `temperature-local_{'lat_ne':43.612026,'lon_ne':3.931351,'lat_sw':43.600426,'lon_sw':3.897817}` 
-  10) Enregistrer puis cliquer sur **Finish**  
-  11) Dites : « OK Google » suivi de votre phrase spéciale du point 4)  
-  12) Et Google Home va vous donner la température moyenne trouvée sur la zone.
+  10. Enregistrer puis cliquer sur **Finish**  
+  11. Dites : « OK Google » suivi de votre phrase spéciale du point 4)  
+  12. Et Google Home va vous donner la température moyenne trouvée sur la zone.
   
 
 N'hésitez pas à poser vos questions ici : https://github.com/Aymkdn/assistant-temperature-local/issues
