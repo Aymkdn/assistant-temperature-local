@@ -20,9 +20,9 @@ Aucune configuration requise.
 ## Utilisation
 
 Il va d'abord falloir déterminer la zone pour laquelle vous souhaitez connaitre la température moyenne : 
-  1) Vérifier que Netatmo propose des stations dans la zone souhaitée : https://weathermap.netatmo.com/
-  2) Si oui, se rendre sur https://www.google.fr/maps
-  3) Sur Google Maps, on va délimiter de façon imaginaire la zone/carré que l'on souhaite pour notre calcul des températures. Pour ce faire :
+  1) Vérifier que Netatmo propose des stations dans la zone souhaitée : https://weathermap.netatmo.com/  
+  2) Si oui, se rendre sur https://www.google.fr/maps  
+  3) Sur Google Maps, on va délimiter de façon imaginaire la zone/carré que l'on souhaite pour notre calcul des températures.   Pour ce faire :  
      * Cliquer droit sur la carte dans **l'angle supérieur droit** de la zone/carré imaginaire, puis choisir *Plus d'infos sur cet endroit* :  
       ![capture](https://user-images.githubusercontent.com/946315/34818410-01ac7d20-f6bb-11e7-8fb8-dfacb1eb96b8.PNG)
      * Un message apparait en bas de la carte :  
