@@ -1,6 +1,6 @@
 {
   "name": "assistant-temperature-local",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Plugin pour récupérer la température moyenne de stations Netatmo dans une zone définie, via un Assistant comme Google Home, en utilisant le package assistant-plugins",
   "author": "aymkdn",
   "main":"temperature-local.js",

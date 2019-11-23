@@ -39,7 +39,7 @@ AssistantTemperatureLocal.prototype.action = function(commande) {
   .then(function(response){
     if (response) {
       var body = JSON.parse(response);
-      var speak = "La température extérieure est de "+body.temperature+" degré";
+      var speak = (body.temperature !== false ? "La température extérieure est de "+body.temperature+" degré" : "Les températures ne sont pas disponibles actuellement.");
       if (_this.plugins.notifier) return _this.plugins.notifier.action(speak);
       else {
         console.log("[assistant-temperature-local] ATTENTION: Le plugin 'notifier' n'a pas été installé... le résultat de cette action ne peut donc pas être diffusé sur un appareil et sera seulement inscrit dans cette fenêtre.");
